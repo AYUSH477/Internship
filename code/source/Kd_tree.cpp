@@ -13,7 +13,7 @@ Point* Kd_implementation::kd_tree(int start, int end, int s_axis)
 			}
 			
             int x = ((end-start)/2)+start; //finds median position
-	    std::nth_element(&l[start], &l[x], &l[end], C(s_axis)); //finds the median wrt to an axis and also makes sure that all the 
+	    std::nth_element(&l[start], &l[x], &l[end], C(s_axis)); //finds the median (quick-select) wrt to an axis and also makes sure that all the 
 								   //elements before are smaller than the median wrt to tha axis and after
 								  // are greater than the median wrt to that axis
             s_axis = (s_axis+1)%dim; //switches to adjacent axis

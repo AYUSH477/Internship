@@ -64,6 +64,9 @@ COMMAND="./code/build/out" # for example, assuming you create an executable test
 echo "COMMAND=${COMMAND}"
 eval ${COMMAND}
 
+COMMAND="python code/source/p.py" # for example, assuming you create an executable test.exe
+echo "COMMAND=${COMMAND}"
+eval ${COMMAND}
 #############################################################################################
 ### Done
 #############################################################################################
