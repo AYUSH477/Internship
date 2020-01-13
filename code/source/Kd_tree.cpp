@@ -56,12 +56,10 @@ double cartesian_dist(const Point* p1, const Point& p2){
 Kd_implementation::Kd_implementation(Point* p, size_t size, int d):tree_size(size){
 				dim = d;
 				l = new Point[size];
-				//list = v1;
                 for(int i = 0; i<size; i++){
                   l[i] = p[i];
                 }
 				delete [] p;
-				//l = v1;
                 root = kd_tree(0, size, 0);
 				
 }
@@ -70,6 +68,7 @@ Kd_implementation::Kd_implementation(Point* p, size_t size, int d):tree_size(siz
 Point Kd_implementation::nearest_neighbor(const Point& p, int s_axis, Point* p1){ 
             
             if(p1 == nullptr){
+				//throw("Tree is empty\n");
                 return p;
 			}
             if(val>cartesian_dist(p1, p)){
