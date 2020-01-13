@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ayush/Teraki3DRecruitmentTestApr19/code/source/Kd_tree.cpp
+iostream
+-
+cmath
+-
+cstring
+-
+limits
+-
+algorithm
+-
+Kd_tree.h
+/home/ayush/Teraki3DRecruitmentTestApr19/code/source/Kd_tree.h
+
+/home/ayush/Teraki3DRecruitmentTestApr19/code/source/Kd_tree.h
+
