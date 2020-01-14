@@ -90,7 +90,7 @@ int main()
 					ss2>>point3.co_ordinates[j];
 					
 				}
-				/*finds nearest point for each input point and also calculates the sum*/
+				/*finds nearest point for each input point and also calculates the sum of errors*/
 				Point temp_p = k_tree.find_nearest(point1, 0, k_tree.getRoot());
 				sum[0]+=dist(point1, temp_p);
 				oa<<point1<<temp_p<<dist(point1, temp_p)<<std::endl;

@@ -4,8 +4,8 @@
 /*Point class to describe and operate on Cloud Points*/
 class Point{
 	public:
-		Point* left;
-		Point*right;
+		Point* left; // left child of the cloud point (necessary for kd tree implementation)
+		Point*right; // right child of the cloud point (necessary for kd tree implementation)
 		double *co_ordinates;
 		int d;
 		Point(const Point& p){ //copy constructor
@@ -38,12 +38,12 @@ class Kd_implementation{
         int dim; // dimension of the tree
         size_t tree_size; // size of the tree
         Point* l; // list of all the points in the tree
-		double val; // stores the distance of the nearest neighbor of the last neighbor call by the user
-		Point* val_ptr; // stores the nearest neighbor of the last neighbor call
+		double val; // stores the distance of the nearest neighbor of the last neighbor call point by the user
+		Point* val_ptr; // stores the nearest neighbor of the last neighbor call point
 		Point* root;  // root of the tree
         typedef struct Comp{
             int index;
-			Comp(int i):index(i){ // struct Comparator to compare the indices depending upon which axis it is
+			Comp(int i):index(i){ // struct Comparator to compare the x, y, or z co-ordinates depending upon which axis it is
 				
 				
 				}
