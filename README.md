@@ -9,9 +9,10 @@ This shell script is responsible for running all the necessary commands to insta
 
 ## Training (from inside the voxelnet folder)
 ```python3 train.py --alpha 1 --beta 10```
-#### Note: alpha and beta are hyper-parameters set by the user. Go through the research paper to learn more about how to set them. 
+##### Note: alpha and beta are hyper-parameters set by the user. Go through the Voxelnet research paper to learn more about how to set them. 
 
 ## Testing:
 ``` python3 test.py -n default ``` 
 
 ``` python3 test.py -n pre_trained_car ```
+##### Note: Use "default" option to use a model you trained. Use "pre_trained_car" option for a pre trained binary car detecting model. 
