@@ -29,8 +29,11 @@ BB | Cls: 1, x: 0.137801, y: -39.895485, l: 0.934592, w: 0.497076, yaw: 1.570796
 ```
 ##### Note: The lines starting with BB are the predictions.
 Convert it into the standard KITTI format which looks something like this:
-``` Car 0.0000 0.0000 0.0000 -498.0000 197.0000 -192.0000 284.0000 1.5488 1.6505 3.9668 -20.9586 2.1262 15.9730 -0.9778 0.9836 ```
+``` 
+Car 0.0000 0.0000 0.0000 -498.0000 197.0000 -192.0000 284.0000 1.5488 1.6505 3.9668 -20.9586 2.1262 15.9730 -0.9778 0.9836 
+```
 You can learn more about the KITTI data format here: https://github.com/bostondiditeam/kitti/blob/master/resources/devkit_object/readme.txt 
+
 I tried the solution here but it didn't work: https://github.com/traveller59/second.pytorch/blob/master/second/data/kitti_dataset.py
 
 2. Change the code so that everything gets printed to the respective files instead of stdout.
