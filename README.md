@@ -8,7 +8,6 @@ Start the docker container from inside the voxelnet folder(`/media/ssd2/archive/
 This shell script is responsible for running all the necessary commands to install the dependencies, setup the environment etc.
 
 ``` chmod +x startup.sh
-    
     ./startup.sh
 ```
 
