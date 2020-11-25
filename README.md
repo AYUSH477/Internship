@@ -12,6 +12,6 @@ This shell script is responsible for running all the necessary commands to insta
 #### Note: alpha and beta are hyper-parameters set by the user. Go through the research paper to learn more about how to set them. 
 
 ## Testing:
-``` python3 test.py -n default 
-    python3 test. py -n pre_trained_car
+``` python3 test.py -n default ``` 
+``` python3 test.py -n pre_trained_car
 ```
