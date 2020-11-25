@@ -7,6 +7,11 @@ Start the docker container from inside the voxelnet folder(`/media/ssd2/archive/
 ## Running startup.sh
 This shell script is responsible for running all the necessary commands to install the dependencies, setup the environment etc.
 
+``` chmod +x startup.sh
+    
+    ./startup.sh
+```
+
 ## Training (from inside the voxelnet folder)
 ```python3 train.py --alpha 1 --beta 10```
 ##### Note: alpha and beta are hyper-parameters set by the user. Go through the Voxelnet research paper to learn more about how to set them. 
