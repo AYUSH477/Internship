@@ -13,5 +13,4 @@ This shell script is responsible for running all the necessary commands to insta
 
 ## Testing:
 ``` python3 test.py -n default ``` 
-``` python3 test.py -n pre_trained_car
-```
+``` python3 test.py -n pre_trained_car ```
